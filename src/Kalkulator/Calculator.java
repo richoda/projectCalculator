@@ -13,26 +13,31 @@ public class Calculator {
         System.out.println("=============Input Angka Kedua=============");
         angkaKedua = Screen.inputanKedua();
         System.out.println("=============Input Operatornya=============");
+        System.out.println("============== +, -, *, /, % ==============");
         ops = Screen.inputanOperator();
         switch(ops){
             case '+':
                 result = angkaPertama + angkaKedua;
-                System.out.println(result);
+                System.out.println("Hasilnya adalah = " + result);
                 break;
             case '-':
                 result = angkaPertama - angkaKedua;
-                System.out.println(result);
+                System.out.println("Hasilnya adalah = " + result);
                 break;
             case '*':
                 result = angkaPertama * angkaKedua;
-                System.out.println(result);
+                System.out.println("Hasilnya adalah = " + result);
                 break;
             case '/':
                 result = angkaPertama / angkaKedua;
-                System.out.println(result);
+                System.out.println("Hasilnya adalah = " + result);
+                break;
+            case '%':
+                result = angkaPertama % angkaKedua;
+                System.out.println("Hasilnya adalah = " + result);
                 break;
             default:
-                System.out.println("Harus milih operator +, -, *, /");
+                System.out.println("Harus milih operator +, -, *, /, %");
                 break;
         }
     }
